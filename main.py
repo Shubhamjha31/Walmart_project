@@ -1,6 +1,10 @@
 from flask import Flask
 import pandas as pd
 from prophet import Prophet
+from pytrends.request import TrendReq
+
+
+pytrends = TrendReq(hl='en-IN', tz=330)
 
 app = Flask(__name__)
 
@@ -27,6 +31,20 @@ def future_prediction():
             'future_sales': future_sales
         })
     return results
+
+@app.route("/trend_analysis")
+def trend_analysis():
+    keywords = ["Dettol", "Nivea", "Harpic", "Colgate"]
+    pytrends.build_payload(keywords, cat=0, timeframe='now 7-d', geo='IN')
+
+    data = pytrends.interest_over_time()
+
+    latest = data.tail(1).T
+    latest = latest[latest.index != 'isPartial']
+    latest.columns = ['score']
+    latest = latest.sort_values('score', ascending=False)
+
+    return latest.to_dict(orient='records')
 
 if __name__ == '__main__':
     app.run(debug=True)
