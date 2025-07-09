@@ -35,6 +35,7 @@ def future_prediction():
 @app.route("/trend_analysis")
 def trend_analysis():
     keywords = ["Dettol", "Nivea", "Harpic", "Colgate"]
+    # analysing the trend for last 7 days
     pytrends.build_payload(keywords, cat=0, timeframe='now 7-d', geo='IN')
 
     data = pytrends.interest_over_time()
