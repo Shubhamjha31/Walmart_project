@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.product-table table{
+    border: 2px solid black;
+}
+
+
+
+
+.search-bar{
+
+}
+
+.search-bar input {
+    border-radius: 6px;
+    height: 1rem;
+}
