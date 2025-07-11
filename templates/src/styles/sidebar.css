@@ -1,0 +1,84 @@
+.outerborder{
+    position: fixed;
+}
+
+.sidebar {
+    height: 97vh;
+    width : 90px;
+    background-color: #999ca0;
+    margin : 10px 0 10px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    display:block;
+}
+
+.logo-con {
+  width: 100%;
+  display :flex;
+  justify-content: center;
+ } 
+
+.logo {
+   font-size: 2.5rem;
+   margin: 20px 0 15px 0;
+}
+
+.logo-object:hover {
+    background-color: black;
+    color: white;
+    transition: 1sec;
+}
+
+.logo-object {
+    display:flex;
+    width: 50%;
+    justify-content: center;
+    margin: 10px 10px 10px 20px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.object {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.Hidden-bar {
+    height: 97vh;   
+    background-color: #eef0f2;
+    display: inline;
+    position : absolute;
+    top: 10px;
+    left: 100px;
+    transition: 1sec;
+}
+
+.outline {
+    width: 80%;
+    height: 60px;
+    margin-left:1rem;
+    margin-right:1rem;
+    border-bottom: solid 1px #9ea1a3;
+}
+
+.outline p {
+    font-size: 1.7rem;
+    font-weight:550;
+    margin-top:1.2rem;
+    
+}
+
+.Hidden-bar a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.2em;
+}
+
+.link1 {
+    margin:12px;
+}
+
+.links {
+    margin: 32px 12px 12px 12px ;
+}
+
