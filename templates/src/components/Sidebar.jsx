@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/sidebar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTruckFast, faWarehouse } from '@fortawesome/free-solid-svg-icons';
-<span class="material-symbols-outlined">
-home
-</span>
+
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,19 +25,19 @@ function Sidebar() {
       <div className='outerborder'>
         <div className='sidebar'>
           <div className='logo-con'>
-           <span onClick={hiddenBar} class="material-symbols-outlined logo">warehouse</span>
+           <span onClick={hiddenBar} className="material-symbols-outlined logo">warehouse</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} class="material-symbols-outlined object">home</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">home</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} class="material-symbols-outlined object">local_shipping</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">local_shipping</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} class="material-symbols-outlined object">monitoring</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">monitoring</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} class="material-symbols-outlined object">all_inbox</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">all_inbox</span>
           </div>
         </div>
 
