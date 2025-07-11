@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { data } from '../walmart_products';
+import '../styles/Product_table.css';
 
 function ProductTable(){
     const [search, setSearch] = useState('');

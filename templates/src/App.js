@@ -6,11 +6,11 @@ import Auth from './pages/Auth';
 function App() {
   return (
     <div className="App">
- <div className='charts'>
-    {/* <AreaChart/> */}
-       {/* <ProductTable /> */}
-       {/* <Auth/> */}
- </div>
+        <div className='charts'>
+            {/* <AreaChart/> */}
+            <ProductTable />
+            {/* <Auth/> */}
+        </div>
 
     </div>
   );

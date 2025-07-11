@@ -1,0 +1,63 @@
+.product-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-table table{
+    border: 2px solid rgb(224, 223, 223);
+    border-radius: 16px;
+    border-collapse: separate;   /* Needed for border-radius to work */
+    overflow: hidden;            /* Ensures content stays within rounded corners */
+    width: 100%;
+}
+
+.product-table th, .product-table td {
+    margin : 0px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.product-table td {
+    border-bottom: 2px solid rgb(224, 223, 223);
+}
+
+.product-table tr:last-child td {
+    border-bottom: none;
+}
+
+.product-table th {
+    border-bottom: 2px solid rgb(224, 223, 223);
+}
+
+.search-bar{
+    border: 2px solid rgb(181, 173, 173);
+    border-radius: 15px;
+    width: 50vw;
+    height: 4.5vh;
+    margin: 10px;
+
+}
+
+.search-bar input {
+    margin-left: 6px;
+    margin-top: 1.6px;
+    border : none;
+    height: 90%;
+    width: 95%;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border: none;
+}
+
+.product-table,
+.product-table table,
+.product-table th,
+.product-table td,
+.search-bar,
+.search-bar input {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
