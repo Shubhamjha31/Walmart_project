@@ -10,22 +10,24 @@ const settings = {
 
 export default function InventoryCapacityChart() {
     return (
-        <div className='capacity-chart'>
+        <div className='capacity-chart' >
             <Gauge
-      {...settings}
-      cornerRadius="50%"
-      sx={(theme) => ({
-        [`& .${gaugeClasses.valueText}`]: {
-          fontSize: 40,
-        },
-        [`& .${gaugeClasses.valueArc}`]: {
-          fill: '#52b202',
-        },
-        [`& .${gaugeClasses.referenceArc}`]: {
-          fill: theme.palette.text.disabled,
-        },
-      })}
-    />
+                {...settings}
+                cornerRadius="50%"
+                sx={(theme) => ({
+                [`& .${gaugeClasses.valueText}`]: {
+                fontSize: 40,
+                fontFamily: "'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif",
+                fontWeight: 600,
+                },
+                [`& .${gaugeClasses.valueArc}`]: {
+                    fill: '#52b202',
+                },
+                [`& .${gaugeClasses.referenceArc}`]: {
+                    fill: theme.palette.text.disabled,
+                },
+                })}
+            />
         </div>
     )
 }

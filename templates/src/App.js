@@ -14,7 +14,7 @@ function App() {
             {/* <AreaChart/> */}
             {/* <ProductTable /> */}
             {/* <Auth/> */}
-            <PieChartOrder />
+            {/* <PieChartOrder /> */}
             <InventoryCapacityChart />
         </div>
 
