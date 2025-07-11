@@ -5,7 +5,6 @@ import '../styles/Product_table.css';
 function ProductTable(){
     const [search, setSearch] = useState('');
 
-
     return (
         <div className='product-table'>
 
@@ -21,7 +20,7 @@ function ProductTable(){
                         <th>Id</th>
                         <th>Name</th>
                         <th>Category</th>
-                        <th>In Stoke</th>
+                        <th>In Stock</th>
                         <th>Status</th>
                     </tr>
                 </thead>
