@@ -1,0 +1,34 @@
+.cards {
+    width: 12vw;
+    height: 14vh;
+    border-radius: 16px;
+    margin-left: 16px;
+    text-align: center;
+    padding-top: 18px;
+    font-family: 'Inter', 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cards:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    filter: brightness(1.08);
+}
+
+.cards p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
+
+.cards h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
