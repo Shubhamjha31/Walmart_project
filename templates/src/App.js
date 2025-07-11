@@ -10,13 +10,20 @@ import InventoryCapacityChart from './components/Inventory_capacity_chart';
 function App() {
   return (
     <div className="App">
-        <div className='charts'>
-            {/* <AreaChart/> */}
-            {/* <ProductTable /> */}
-            {/* <Auth/> */}
-            <PieChartOrder />
-            <InventoryCapacityChart />
-        </div>
+      {/* <div className='auth-page'>
+          <Auth/>
+        </div> */}
+         {/*leave this as it is for now */}
+
+      <div className='demo-page'>
+         <div className='dummy-sidebar'> </div> {/*dummy sidebar for refernceing*/}
+         <div className='charts'>
+          <AreaChart />
+          <PieChartOrder />
+          <InventoryCapacityChart />
+          <ProductTable />
+         </div>
+      </div>
 
     </div>
   );

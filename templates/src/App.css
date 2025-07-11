@@ -1,8 +1,40 @@
+:root{
+    --grey: #f3f5f7;
+    --black: #101524;
+}
 .App{
 padding: 0px;
 margin:0px;
+
 }
 .charts{
     width:60em;
     height:40em;
+}
+.auth-page{
+    height:100vh;
+    overflow:hidden;
+}
+
+.demo-page{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    height: 100dvh;
+    overflow:hidden;
+}
+.dummy-sidebar{
+    position: sticky;
+    width:30em;
+    content:"";
+    background-color: var(--grey);
+    border:none;
+    height:100dvh;
+    flex-shrink: 0;
+    top:0;
+}
+.charts{
+    flex-grow:1;
+    height:100dvh;
+    overflow-y: auto;
 }
