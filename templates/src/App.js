@@ -9,15 +9,14 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    // <Routes>
-    //   <Route path="/auth" element={<Auth />} />
+    <Routes>
+      <Route path="/auth" element={<Auth />} />
 
-    //   <Route element={<LayoutWithSidebar />}>
-    //     <Route path="/home" element={<Home />} />
-    //     <Route path="/suppliers" element={<Inventory />} />
-    //   </Route>
-    // </Routes>
-    <Sidebar />
+      <Route element={<LayoutWithSidebar />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/suppliers" element={<Inventory />} />
+      </Route>
+    </Routes>
   );
 }
 

@@ -66,6 +66,7 @@
     top: 10px;
     left: 100px;
     transition: 1sec;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
 }
 
 .outline {
