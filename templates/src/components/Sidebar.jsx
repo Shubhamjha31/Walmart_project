@@ -41,7 +41,8 @@ function Sidebar() {
         </div>
 
         <div id='Hidden' className='Hidden-bar' style={customStyle}>
-           <div className='outline'>
+          <button style={{ float: 'right', margin: '8px', background: 'none', border: 'none', fontSize: '20px', cursor: 'pointer' }} onClick={hiddenBar}>&times;</button>
+          <div className='outline'>
             <p>Inventory</p>
           </div>
           <div className='link1'>
@@ -58,7 +59,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-     
+      
       </BrowserRouter>
     );
 }
