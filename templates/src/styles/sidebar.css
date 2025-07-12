@@ -1,46 +1,61 @@
+:root{
+    --grey: #e0e5ea;
+    --black: #101524;
+}
 .outerborder{
     position: fixed;
 }
 
 .sidebar {
+    position: sticky;
+    flex-shrink: 0;
     height: 97vh;
-    width : 90px;
-    background-color: #999ca0;
+    width : 5em;
+    background-color:var(--grey);
     margin : 10px 0 10px 10px;
     border-top-left-radius: 15px;
     border-bottom-left-radius:15px;
     display:block;
+    
 }
 
 .logo-con {
   width: 100%;
   display :flex;
   justify-content: center;
+  cursor: pointer;
  } 
 
 .logo {
    font-size: 2.5rem;
-   margin: 20px 0 15px 0;
+   margin: 30px 0 15px 0;
 }
 
 .logo-object:hover {
-    background-color: black;
+    background-color: var(--black);
     color: white;
     transition: 1sec;
 }
 
 .logo-object {
     display:flex;
-    width: 50%;
+    width: 1.4em;
+    height: 1.6em;
     justify-content: center;
-    margin: 10px 10px 10px 20px;
+    align-items: center;
+    margin: 0.6em auto;
     border-radius: 5px;
     padding: 0 5px;
+    font-size: 2em;
+      
 }
+
+
 
 .object {
     font-size: 2rem;
     padding: 10px;
+    line-height: 1.5;
 }
 
 .Hidden-bar {

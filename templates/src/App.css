@@ -5,36 +5,16 @@
 .App{
 padding: 0px;
 margin:0px;
-
-}
-.charts{
-    width:60em;
-    height:40em;
-}
-.auth-page{
-    height:100vh;
-    overflow:hidden;
-}
-
-.demo-page{
-    display: flex;
-    padding: 0px;
-    margin: 0px;
+ display: flex;
     height: 100dvh;
     overflow:hidden;
+
 }
-.dummy-sidebar{
-    position: sticky;
-    width:30em;
-    content:"";
-    background-color: var(--grey);
-    border:none;
-    height:100dvh;
-    flex-shrink: 0;
-    top:0;
-}
-.charts{
+
+.main-page{
     flex-grow:1;
     height:100dvh;
     overflow-y: auto;
+    margin-left: 8em;
 }
+

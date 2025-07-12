@@ -8,11 +8,7 @@ function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
 
     function hiddenBar() {
-      setIsOpen(true);
-    }
-
-    function closeBar() {
-      setIsOpen(false);
+     setIsOpen(prev => !prev)
     }
 
     const customStyle = {
@@ -45,8 +41,7 @@ function Sidebar() {
         </div>
 
         <div id='Hidden' className='Hidden-bar' style={customStyle}>
-          <button style={{ float: 'right', margin: '8px', background: 'none', border: 'none', fontSize: '20px', cursor: 'pointer' }} onClick={closeBar}>&times;</button>
-          <div className='outline'>
+           <div className='outline'>
             <p>Inventory</p>
           </div>
           <div className='link1'>
@@ -63,9 +58,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path='/home' element={<Home />} />
-      </Routes>
+     
       </BrowserRouter>
     );
 }
