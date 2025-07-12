@@ -20,7 +20,7 @@ function Sidebar() {
     };
 
     return (
-      <BrowserRouter>
+  
       <div className='outerborder'>
         <div className='sidebar'>
           <div className='logo-con'>
@@ -59,8 +59,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      
-      </BrowserRouter>
+   
     );
 }
 
