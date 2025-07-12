@@ -5,17 +5,19 @@ import Home from './pages/Home';
 import Inventory from './pages/Inventory';
 import LayoutWithSidebar from './pages/MainLayout';
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/auth" element={<Auth />} />
+    // <Routes>
+    //   <Route path="/auth" element={<Auth />} />
 
-      <Route element={<LayoutWithSidebar />}>
-        <Route path="/home" element={<Home />} />
-        <Route path="/suppliers" element={<Inventory />} />
-      </Route>
-    </Routes>
+    //   <Route element={<LayoutWithSidebar />}>
+    //     <Route path="/home" element={<Home />} />
+    //     <Route path="/suppliers" element={<Inventory />} />
+    //   </Route>
+    // </Routes>
+    <Sidebar />
   );
 }
 

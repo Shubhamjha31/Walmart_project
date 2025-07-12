@@ -90,10 +90,23 @@
 }
 
 .link1 {
-    margin:12px;
+    width: 80%;
+    margin: 2.2rem 0.6rem 0.6rem 0.6rem;
+    padding : 7px;
+    border-radius: 5px;
+
 }
 
 .links {
-    margin: 32px 12px 12px 12px ;
+   margin:2.1rem 1rem 0.6rem 0.6rem;
+   padding: 7px;
+   border-radius: 5px;
 }
 
+.link1:hover {
+    background-color: #d6dcde;
+}
+
+.links:hover {
+    background-color: #d6dcde;
+}
