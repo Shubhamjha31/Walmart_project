@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import '../styles/sidebar.css';
+import Home from '../pages/Home';
 
 
 function Sidebar() {
@@ -22,6 +24,7 @@ function Sidebar() {
     };
 
     return (
+      <BrowserRouter>
       <div className='outerborder'>
         <div className='sidebar'>
           <div className='logo-con'>
@@ -47,19 +50,23 @@ function Sidebar() {
             <p>Inventory</p>
           </div>
           <div className='link1'>
-            <a href="">Suppliers</a> <br />
+            <Link to='/home' >Home Page</Link> <br />
           </div>
           <div className='links'>
-            <a href="">Items List</a> <br />
+            <Link to='/suppliers' >Suppliers</Link> <br />
           </div>
           <div className='links'>
-            <a href="">Profit Graph</a> <br />
+            <Link to='/graph' >Profit Graph</Link> <br />
           </div>
           <div className='links'>
-            <a href="">Home Page</a>
+            <Link to='/Item List' >Items List</Link>
           </div>
         </div>
       </div>
+      <Routes>
+        <Route path='/home' element={<Home />} />
+      </Routes>
+      </BrowserRouter>
     );
 }
 
