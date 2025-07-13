@@ -52,7 +52,7 @@ function Sidebar() {
             <Link to='/suppliers' >Suppliers</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/graph' >Profit Graph</Link> <br />
+            <Link to='/dashboard' >Profit Graph</Link> <br />
           </div>
           <div className='links'>
             <Link to='/Item List' >Items List</Link>

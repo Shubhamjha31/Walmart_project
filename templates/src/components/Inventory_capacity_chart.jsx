@@ -28,6 +28,7 @@ export default function InventoryCapacityChart() {
                 },
                 })}
             />
+            <p>60% Inventory is fulled</p>
         </div>
     )
 }

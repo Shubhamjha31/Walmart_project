@@ -1,0 +1,9 @@
+.capacity-chart{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif; 
+}
+
+p{
+    margin-left: 15px;
+}

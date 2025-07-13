@@ -1,0 +1,8 @@
+.dashboard{
+    display: grid;
+    grid-template: auto auto / 1fr 1fr 1fr;
+}
+
+.pie{
+    grid-area: 1 / 1 / 2 / 3;
+}

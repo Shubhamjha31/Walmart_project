@@ -5,7 +5,6 @@ import '../styles/piechart.css';
 
 export default function PieChartOrder() {
   return (
-    <div className='sale-cards'>
         <div className='pie-chart'>
           <PieChart
             series={[
@@ -20,7 +19,6 @@ export default function PieChartOrder() {
             width={300}
           />
         </div>
-    </div>
     
     
   );
