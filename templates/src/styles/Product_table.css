@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+     width: 90em;
 }
 
 .product-table table{
     border: 2px solid rgb(224, 223, 223);
     border-radius: 16px;
     border-collapse: separate;   /* Needed for border-radius to work */
-    overflow: hidden;            /* Ensures content stays within rounded corners */
-    width: 100%;
+    overflow: hidden;
+     width: 90em;            /* Ensures content stays within rounded corners */
+   
 }
 
 .product-table th, .product-table td {

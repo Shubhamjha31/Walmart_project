@@ -8,6 +8,7 @@ margin:0px;
  display: flex;
     height: 100dvh;
     overflow:hidden;
+     font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif; 
 
 }
 
@@ -16,5 +17,6 @@ margin:0px;
     height:100dvh;
     overflow-y: auto;
     margin-left: 8em;
+    width:90em;
 }
 
