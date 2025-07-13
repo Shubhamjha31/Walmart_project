@@ -14,7 +14,7 @@ function ProductTable(){
             </div>
 
 
-            <table>
+            <table style={{width: "1000px"}}>
                 <thead>
                     <tr>
                         <th>Id</th>

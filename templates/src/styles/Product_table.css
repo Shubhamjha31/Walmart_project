@@ -8,9 +8,9 @@
 .product-table table{
     border: 2px solid rgb(224, 223, 223);
     border-radius: 16px;
-    border-collapse: separate;   /* Needed for border-radius to work */
+    border-collapse: separate;   
     overflow: hidden;
-     width: 90em;            /* Ensures content stays within rounded corners */
+    width: 90em;            
    
 }
 
@@ -38,11 +38,12 @@
     border-radius: 15px;
     width: 50vw;
     height: 4.5vh;
-    margin: 10px;
+    margin: 20px;
 
 }
 
 .search-bar input {
+    padding: 0px;
     margin-left: 6px;
     margin-top: 1.6px;
     border : none;
