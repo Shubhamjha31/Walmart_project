@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import {  Link} from "react-router-dom";
 import '../styles/sidebar.css';
-import Home from '../pages/Home';
-
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,17 +58,17 @@ function Sidebar() {
              <div className='profile-options'>
                 <div className='profile-link'>
                   <span class="material-symbols-outlined">person</span>
-                  <a href="">View profile </a></div>
+                  <a href="/">View profile </a></div>
                 <div className='profile-link'>
                   <span class="material-symbols-outlined">settings_account_box</span>
-                  <a href="">Account settings </a>
+                  <a href="/">Account settings </a>
                 </div>
                 <div className='profile-link'>
                   <span class="material-symbols-outlined">deployed_code_history</span>
-                  <a href="">Updates</a></div>
+                  <a href="/">Updates</a></div>
                 <div className='profile-link'>
                   <span class="material-symbols-outlined">logout</span>
-                  <a href="">Logout </a></div>
+                  <a href="/">Logout </a></div>
                 </div>
           </div>
          </div>
@@ -83,19 +81,19 @@ function Sidebar() {
             <p>Inventory</p>
           </div>
           <div className='link1'>
-            <Link to='/' >Home Page</Link> <br />
+            <Link to='/' >Dashboard</Link> <br />
           </div>
           <div className='links'>
             <Link to='/suppliers' >Suppliers</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/graph' >Sales</Link> <br />
+            <Link to='/sales' >Sales</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/Item List' >Inventory</Link>
+            <Link to='/inventory' >Inventory</Link>
           </div>
           <div className='links'>
-            <Link to='?' >Trend analysis</Link>
+            <Link to='/analysis' >Trend analysis</Link>
           </div>
         </div>
       </div>

@@ -4,6 +4,8 @@ import Auth from './pages/Auth';
 import Home from './pages/Home';
 import Inventory from './pages/Inventory';
 import LayoutWithSidebar from './pages/MainLayout';
+import TrendAnalysis from './pages/Trend_analysis';
+import Suppliers from './pages/Suppliers';
 import './App.css';
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
 
       <Route element={<LayoutWithSidebar />}>
         <Route path="/" element={<Home />} />
-        <Route path="/suppliers" element={<Inventory />} />
+        <Route path="/inventory" element={<Inventory />} />
+      <Route path="/analysis" element={<TrendAnalysis />} />
+      <Route path="/suppliers" element={<Suppliers />} />
       </Route>
     </Routes>
   );
