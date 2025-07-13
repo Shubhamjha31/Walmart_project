@@ -13,11 +13,10 @@
     height: 97vh;
     width : 5em;
     background-color:var(--grey);
-    margin : 10px 0 10px 10px;
+    margin : 5px 0 5px 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius:15px;
     display:block;
-    
 }
 
 .logo-con {
@@ -48,10 +47,7 @@
     border-radius: 5px;
     padding: 0 5px;
     font-size: 2em;
-      
 }
-
-
 
 .object {
     font-size: 2rem;
@@ -64,7 +60,7 @@
     background-color: #eef0f2;
     display: inline;
     position : absolute;
-    top: 10px;
+    top: 5px;
     left: 100px;
     transition: 1sec;
     font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
@@ -82,7 +78,6 @@
     font-size: 1.7rem;
     font-weight:550;
     margin-top:1.2rem;
-    
 }
 
 .Hidden-bar a {
@@ -93,10 +88,9 @@
 
 .link1 {
     width: 80%;
-    margin: 2.2rem 0.6rem 0.6rem 0.6rem;
+    margin: 2rem 0.6rem 0.6rem 0.6rem;
     padding : 7px;
     border-radius: 5px;
-
 }
 
 .links {
@@ -107,8 +101,117 @@
 
 .link1:hover {
     background-color: #d6dcde;
+    font-weight: 550;
 }
 
 .links:hover {
     background-color: #d6dcde;
+    font-weight: 550;
+}
+
+.profile-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+
+.profile {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+} 
+
+.profile:hover {
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+}
+.profile-content {
+    display: none;
+    position: absolute;
+    left : 4.5rem;
+    bottom: 4rem;
+    height: 14em;
+    width: 14em;
+    background-color: #ddd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius : 5px;
+}
+
+.profile-info {
+    width : 100%;
+    height: 3.6rem;
+    border-bottom:1px solid #9ea1a3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+   padding-right: 0.8rem;
+   font-size: 2.5rem
+}
+
+.profile-name {
+    line-height: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+}
+.profile-email {
+    line-height: 0;
+}
+
+.profile-options a{
+    text-decoration: none;
+    color: black;
+}
+
+.profile-link {
+    width : 90%;
+    height: 20%;
+    margin: 3px 0.6rem;
+    padding-left: 4px;
+    line-height: 2.3;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-link span{
+    padding-right: 4px;
+}
+
+.profile-link:hover {
+    background-color: #8f9293;
+    font-weight: 550;
+}
+
+.profile-con:hover .profile-content {
+    display: block;
+}
+
+.notification {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 11rem;
+    border-radius: 5px;
+    margin-left: 1.25rem;
+}
+
+.noti-icon {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.notification:hover {
+    background-color: black;
+    color: white;
 }
