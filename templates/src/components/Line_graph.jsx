@@ -18,9 +18,9 @@ const data = {
     {
       label: 'Page Views',
       data: [5000, 7500, 8000, 6000, 9000 , 2000 , 3500 , 6000, 4000],
-      backgroundColor: 'rgba(75, 192, 192, 0.2)', // Area fill
-      borderColor: 'rgba(75, 192, 192, 1)',       // Line color
-      fill: true, // Enables area fill
+      backgroundColor: 'rgba(75, 192, 192, 0.2)', 
+      borderColor: 'rgba(75, 192, 192, 1)',
+      fill: true, 
       tension: 0.4,
     },
   ],

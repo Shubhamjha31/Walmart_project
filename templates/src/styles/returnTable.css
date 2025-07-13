@@ -1,0 +1,13 @@
+.return-table {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 30px;
+}
+
+.return-table h3 {
+  margin-bottom: 16px;
+  color: #333;
+  font-weight: 600;
+}

@@ -1,7 +1,7 @@
 const rawOrders = [
-  { label: 'Pending Orders', value: 120 },
-  { label: 'Completed Orders', value: 340 },
-  { label: 'Delayed Orders', value: 25 }
+  { label: 'Pending Orders ', value: 120 },
+  { label: 'Completed Orders ', value: 340 },
+  { label: 'Delayed Orders ', value: 25 }
 ];
 
 const totalOrders = rawOrders.reduce((sum, item) => sum + item.value, 0);

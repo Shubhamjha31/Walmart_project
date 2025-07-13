@@ -3,8 +3,8 @@ import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
 import '../styles/Inventory_capacity_chart.css';
 
 const settings = {
-  width: 200,
-  height: 200,
+  width: 300,
+  height: 300,
   value: 60,
 };
 
@@ -28,7 +28,7 @@ export default function InventoryCapacityChart() {
                 },
                 })}
             />
-            <p>60% Inventory is fulled</p>
+            <p>60% Inventory is full</p>
         </div>
     )
 }

@@ -46,13 +46,13 @@ function Sidebar() {
             <p>Inventory</p>
           </div>
           <div className='link1'>
-            <Link to='/home' >Home Page</Link> <br />
+            <Link to='/' >Home Page</Link> <br />
           </div>
           <div className='links'>
             <Link to='/suppliers' >Suppliers</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/dashboard' >Profit Graph</Link> <br />
+            <Link to='/graph' >Profit Graph</Link> <br />
           </div>
           <div className='links'>
             <Link to='/Item List' >Items List</Link>
