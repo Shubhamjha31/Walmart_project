@@ -27,7 +27,7 @@ function Sidebar() {
            <span onClick={hiddenBar} className="material-symbols-outlined logo">warehouse</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} className="material-symbols-outlined object">home</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">Dashboard</span>
           </div>
           <div className='logo-object'>
             <span onClick={hiddenBar} className="material-symbols-outlined object">local_shipping</span>
@@ -36,8 +36,45 @@ function Sidebar() {
             <span onClick={hiddenBar} className="material-symbols-outlined object">monitoring</span>
           </div>
           <div className='logo-object'>
-            <span onClick={hiddenBar} className="material-symbols-outlined object">all_inbox</span>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">inventory_2</span>
           </div>
+          <div className='logo-object'>
+            <span onClick={hiddenBar} className="material-symbols-outlined object">trending_up</span>
+          </div>
+          <div className='notification'>
+            <span onClick={hiddenBar} className="material-symbols-outlined noti-icon">notifications_active</span>
+          </div>
+
+        <div className='profile-con'>
+           <span className="material-symbols-outlined profile">account_circle</span>
+
+         <div className='profile-content'>
+           <div className='profile-info'>
+              <span class="material-symbols-outlined pic">account_circle</span>
+              <div>
+                <p className='profile-name'>John Doe</p> 
+                <p className='profile-email'>johndoe@gmail.com</p>
+              </div>
+            </div>
+
+             <div className='profile-options'>
+                <div className='profile-link'>
+                  <span class="material-symbols-outlined">person</span>
+                  <a href="">View profile </a></div>
+                <div className='profile-link'>
+                  <span class="material-symbols-outlined">settings_account_box</span>
+                  <a href="">Account settings </a>
+                </div>
+                <div className='profile-link'>
+                  <span class="material-symbols-outlined">deployed_code_history</span>
+                  <a href="">Updates</a></div>
+                <div className='profile-link'>
+                  <span class="material-symbols-outlined">logout</span>
+                  <a href="">Logout </a></div>
+                </div>
+          </div>
+         </div>
+
         </div>
 
         <div id='Hidden' className='Hidden-bar' style={customStyle}>
@@ -52,10 +89,13 @@ function Sidebar() {
             <Link to='/suppliers' >Suppliers</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/graph' >Profit Graph</Link> <br />
+            <Link to='/graph' >Sales</Link> <br />
           </div>
           <div className='links'>
-            <Link to='/Item List' >Items List</Link>
+            <Link to='/Item List' >Inventory</Link>
+          </div>
+          <div className='links'>
+            <Link to='?' >Trend analysis</Link>
           </div>
         </div>
       </div>
