@@ -94,7 +94,7 @@
 }
 
 .links {
-   margin:2.1rem 1rem 0.6rem 0.6rem;
+   margin:1.8rem 1rem 0.6rem 0.6rem;
    padding: 7px;
    border-radius: 5px;
 }
@@ -112,7 +112,7 @@
 .profile-con {
     display: flex;
     justify-content: center;
-    margin-top: 0.3rem;
+    margin-top: 0.3em;
 }
 
 .profile {
@@ -136,7 +136,7 @@ button {
     display: none;
     position: absolute;
     left : 4.5rem;
-    bottom: 4rem;
+    bottom: 3rem;
     height: 14em;
     width: 14em;
     background-color: #ddd;
