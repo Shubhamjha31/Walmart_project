@@ -2,12 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { Stage, Layer, Rect, Text } from "react-konva";
 
 const ZONE_TYPES = [
-  { label: "Staging Area", color: "#facc15" },
-  { label: "Inbound", color: "#22c55e" },
+  { label: "Forward pick", color: "#facc15" },
+  { label: "Recieving", color: "#22c55e" },
   { label: "Outbound", color: "#3b82f6" },
   { label: "Packaging", color: "#ec4899" },
-  { label: "Returns/Damaged", color: "#ef4444" },
-  { label: "Free Space", color: "#a3a3a3" },
+  { label: "Returned/Damaged", color: "#782b2bff" },
+  { label: "Palette reserve", color: "#a3a3a3" },
+    { label: "High Value", color: "#ff0000ff" }
 ];
 
 const SHELF_ZONE_COLOR = "#94a3b8";

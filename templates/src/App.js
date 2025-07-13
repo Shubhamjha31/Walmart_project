@@ -17,6 +17,10 @@ function App() {
         <Route path="/suppliers" element={<Inventory />} />
       </Route>
     </Routes>
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
   );
 }
 
