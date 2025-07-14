@@ -16,17 +16,18 @@ export default function TrendAnalysis() {
     const formatSales = (value) => `${value}k`;
 
     const forecastSalesData = [
-        { month: 'Jan', sales: 80 },
-        { month: 'Feb', sales: 90 },
-        { month: 'Mar', sales: 110 },
-        { month: 'Apr', sales: 115 },
-        { month: 'May', sales: 118 },
-        { month: 'Jun', sales: 121 },
-        { month: 'July', sales: 134 },
-        { month: 'Aug', sales: 140 },
-        { month: 'Sept', sales: 152 },
-        { month: 'Oct', sales: 157 },
-        { month: 'Nov', sales: 163 },
+        { month: 'Jan', sales: 12000, forecast: 18000 },
+        { month: 'Feb', sales: 15000, forecast: 21000 },
+        { month: 'Mar', sales: 17000, forecast: 23000 },
+        { month: 'Apr', sales: 14000, forecast: 20000 },
+        { month: 'May', sales: 18000, forecast: 25000 },
+        { month: 'Jun', sales: 16000, forecast: 24000 },
+        { month: 'Jul', sales: 20000, forecast: 30000 },
+        { month: 'Aug', sales: 21000, forecast: 31000 },
+        { month: 'Sep', sales: 19000, forecast: 28000 },
+        { month: 'Oct', sales: 22000, forecast: 32000 },
+        { month: 'Nov', sales: 23000, forecast: 34000 },
+        { month: 'Dec', sales: 25000, forecast: 36000 },
     ];
     const formatForecast = (value) => `${value} units`;
 
@@ -37,9 +38,22 @@ export default function TrendAnalysis() {
                 <div className="forecast-graph">
                     <WarehouseSalesChart
                         chartData={forecastSalesData}
-                        lineColor="#FFA726"
-                        valueFormatter={formatForecast}
+                        seriesConfig={[
+                        {
+                        dataKey: 'sales',
+                        label: 'Last Year Sales',
+                        valueFormatter: formatForecast,
+                        color: '#29B6F6',
+                        },
+                        {
+                        dataKey: 'forecast',
+                        label: 'Forecasted Sales',
+                        valueFormatter: formatForecast,
+                        color: '#FFA726',
+                        },
+                        ]}
                     />
+
                 </div>
                 <div className="dropdown-menus">
                     <DropdownMenu />
@@ -51,9 +65,16 @@ export default function TrendAnalysis() {
                 <div className="socialmedia-graph">
                     <WarehouseSalesChart
                         chartData={myWarehouseSalesData}
-                        lineColor="#FF5733"
-                        valueFormatter={formatSales}
+                        seriesConfig={[
+                        {
+                        dataKey: 'sales',
+                        label: 'Monthly Sales',
+                        valueFormatter: formatSales,
+                        color: '#FF5733',
+                        },
+                    ]}
                     />
+
                 </div>
             </div>
         </div>

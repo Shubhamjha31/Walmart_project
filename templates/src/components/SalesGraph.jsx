@@ -1,24 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import { LineChart } from '@mui/x-charts';
-import { warehouseSalesData , salesFormatter } from './component_assets/salesData'; 
-export default function WarehouseSalesChart({ chartData, lineColor , valueFormatter }) {
 
-
-  const datasetToUse = chartData || warehouseSalesData;
-
+export default function WarehouseSalesChart({ chartData, seriesConfig, height = 300 }) {
   return (
     <LineChart
-      dataset={datasetToUse}
+      dataset={chartData}
       xAxis={[{ scaleType: 'point', dataKey: 'month' }]}
-      series={[
-        {
-          dataKey: 'sales',
-          label: 'Monthly Sales',
-          valueFormatter: valueFormatter || salesFormatter,
-          color: lineColor,
-        },
-      ]}
-      height={300}
+      series={seriesConfig}
+      height={height}
       sx={{ width: '100%' }}
     />
   );
