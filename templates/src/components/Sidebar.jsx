@@ -49,7 +49,7 @@ function Sidebar() {
 
          <div className='profile-content'>
            <div className='profile-info'>
-              <span class="material-symbols-outlined pic">account_circle</span>
+              <span className="material-symbols-outlined pic">account_circle</span>
               <div>
                 <p className='profile-name'>John Doe</p> 
                 <p className='profile-email'>johndoe@gmail.com</p>
@@ -58,17 +58,17 @@ function Sidebar() {
 
              <div className='profile-options'>
                 <div className='profile-link'>
-                  <span class="material-symbols-outlined">person</span>
+                  <span className="material-symbols-outlined">person</span>
                   <a href="/">View profile </a></div>
                 <div className='profile-link'>
-                  <span class="material-symbols-outlined">settings_account_box</span>
+                  <span className="material-symbols-outlined">settings_account_box</span>
                   <a href="/">Account settings </a>
                 </div>
                 <div className='profile-link'>
-                  <span class="material-symbols-outlined">deployed_code_history</span>
+                  <span className="material-symbols-outlined">deployed_code_history</span>
                   <a href="/">Updates</a></div>
                 <div className='profile-link'>
-                  <span class="material-symbols-outlined">logout</span>
+                  <span className="material-symbols-outlined">logout</span>
                   <a href="/">Logout </a></div>
                 </div>
           </div>

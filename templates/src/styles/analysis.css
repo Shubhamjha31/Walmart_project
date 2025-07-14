@@ -41,53 +41,53 @@
 
 .dropdown-wrapper {
   position: relative;
-  width: 18rem; /* Equivalent to w-72 */
-  font-family: "Inter", sans-serif; /* Ensure font is applied */
+  width: 18rem; 
+  font-family: "Inter", sans-serif; 
 }
 
 .dropdown-header {
   width:140%;
   height: 3em;
-  background-color: #ffffff; /* Equivalent to bg-white */
-  border-radius: 0.5rem; /* Equivalent to rounded-lg */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md */
-  padding: 0.8rem; /* Equivalent to p-2 */
+  background-color: #ffffff; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0.8rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all 300ms ease-in-out; /* Equivalent to transition-all duration-300 ease-in-out */
+  transition: all 300ms ease-in-out;
   color: #111827; 
-margin: 4em 0;}
+  margin: 4em 0;}
 
 .season-dropdown{
   margin-top: 1em;
 }
 
 .dropdown-header:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to hover:shadow-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
 }
 
 .dropdown-header:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #3b82f6; /* Equivalent to focus:ring-2 focus:ring-blue-500 */
+  box-shadow: 0 0 0 2px #3b82f6;
 }
 .dropdown-selected-label {
-  color: #1f2937; /* Equivalent to text-gray-800 */
-  font-size: 1.125rem; /* Equivalent to text-lg */
+  color: #1f2937;
+  font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 500; /* Equivalent to font-medium */
-  padding-left: 0.5rem; /* Equivalent to px-2 */
+  font-weight: 500;
+  padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.25rem; /* Equivalent to py-1 */
+  padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
 .dropdown-arrow {
-  width: 1.5rem; /* Equivalent to w-6 */
-  height: 1.5rem; /* Equivalent to h-6 */
-  color: #6b7280; /* Equivalent to text-gray-500 */
-  transition: transform 300ms; /* Equivalent to transition-transform duration-300 */
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #6b7280;
+  transition: transform 300ms;
 }
 
 
@@ -97,44 +97,44 @@ margin: 4em 0;}
 
 .dropdown-options-list {
   position: absolute;
-  top: 100%; /* Equivalent to top-full */
+  top: 100%;
   left: 0;
-  margin-top: 0.5rem; /* Equivalent to mt-2 */
+  margin-top: 0.5rem;
   width: 100%;
-  background-color: #ffffff; /* Equivalent to bg-white */
-  border-radius: 0.5rem; /* Equivalent to rounded-lg */
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Equivalent to shadow-xl */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   overflow: hidden;
-  z-index: 10; /* Equivalent to z-10 */
-  transform-origin: top; /* Equivalent to origin-top */
-  transform: scaleY(1); /* Equivalent to scale-y-100 */
-  opacity: 1; /* Equivalent to opacity-100 */
-  transition: all 300ms ease-in-out; /* Equivalent to transition-all duration-300 ease-in-out */
+  z-index: 10;
+  transform-origin: top; 
+  transform: scaleY(1);
+  opacity: 1; 
+  transition: all 300ms ease-in-out;
 }
 
 .dropdown-options-list ul {
   list-style: none;
-  padding: 0.25rem 0; /* Equivalent to py-1 */
+  padding: 0.25rem 0;
   margin: 0;
 }
 
 .dropdown-option-item {
-  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-left: 1rem; 
   padding-right: 1rem;
-  padding-top: 0.5rem; /* Equivalent to py-2 */
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  color: #374151; /* Equivalent to text-gray-700 */
-  transition: background-color 200ms; /* Equivalent to transition-colors duration-200 */
+  color: #374151; 
+  transition: background-color 200ms; 
 }
 
 .dropdown-option-item:hover {
-  background-color: #eff6ff; /* Equivalent to hover:bg-blue-50 */
+  background-color: #eff6ff; 
 }
 
 .dropdown-option-item.selected {
-  background-color: #dbeafe; /* Equivalent to bg-blue-100 */
-  font-weight: 600; /* Equivalent to font-semibold */
+  background-color: #dbeafe; 
+  font-weight: 600; 
 }
 
 .trending-products-div{
