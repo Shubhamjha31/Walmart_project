@@ -1,0 +1,98 @@
+
+:root {
+
+    --card-bg: #ffffff;
+    --text-color-primary: #111827;
+    --text-color-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --arrow-color: #22c55e; 
+    --table-header-bg: #f9fafb;
+    --table-row-hover-bg: #f3f4f6;
+}
+
+.trending-products-card {
+    background-color: var(--card-bg);
+    border-radius: 0.75rem; 
+    box-shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; 
+}
+
+.trending-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.trending-title {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin: 0;
+    color: var(--text-color-primary);
+}
+
+.trending-stats {
+    display: flex;
+    align-items: center;
+    color: var(--arrow-color);
+    font-weight: 500;
+}
+
+.trending-arrow {
+    width: 1.25rem; 
+    height: 1.25rem; 
+    margin-right: 0.25rem;
+    stroke-width: 2;
+}
+
+.trending-percentage {
+    font-size: 0.9rem;
+}
+
+.trending-subtitle {
+    font-size: 0.875rem; 
+    color: var(--text-color-secondary);
+    margin-bottom: 1rem;
+}
+
+.trending-table-container {
+    overflow-x: auto; }
+
+.trending-table {
+    width: 100%;
+    border-collapse: collapse; 
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.trending-table th,
+.trending-table td {
+    padding: 0.75rem 0.5rem; 
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color-primary);
+}
+
+.trending-table th {
+    background-color: var(--table-header-bg);
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.trending-table tbody tr:last-child td {
+    border-bottom: none; 
+}
+
+.trending-table tbody tr:hover {
+    background-color: var(--table-row-hover-bg);
+    transition: background-color 0.2s ease;
+}
+

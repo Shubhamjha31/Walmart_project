@@ -33,7 +33,11 @@ export default function Dashboard() {
 
         <div className="sales-return-wrapper">
             <div className="dashboard-box sales">
-                <WarehouseSalesChart />
+            <WarehouseSalesChart
+               chartData={null}
+                lineColor="#FF5733"
+             valueFormatter={null}
+                    />
             </div>
 
             <div className="dashboard-box return-table">

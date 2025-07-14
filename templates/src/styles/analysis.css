@@ -1,5 +1,14 @@
-.forecast-graph{
-    width:60em;
+.analysis-page{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 2em;
+  align-items: stretch;
+}
+
+.forecast-graph , .socialmedia-graph{
+   grid-column: span 2;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
@@ -22,4 +31,112 @@
   background-color: #4CAF50;
   margin: 12px auto 0;
   border-radius: 2px;
+}
+
+.dropdown-menus{
+  display: block;
+  align-content: space-around;
+  grid-column: span 1;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 18rem; /* Equivalent to w-72 */
+  font-family: "Inter", sans-serif; /* Ensure font is applied */
+}
+
+.dropdown-header {
+  width:140%;
+  height: 3em;
+  background-color: #ffffff; /* Equivalent to bg-white */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md */
+  padding: 0.8rem; /* Equivalent to p-2 */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 300ms ease-in-out; /* Equivalent to transition-all duration-300 ease-in-out */
+  color: #111827; 
+margin: 4em 0;}
+
+.season-dropdown{
+  margin-top: 1em;
+}
+
+.dropdown-header:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to hover:shadow-lg */
+}
+
+.dropdown-header:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* Equivalent to focus:ring-2 focus:ring-blue-500 */
+}
+.dropdown-selected-label {
+  color: #1f2937; /* Equivalent to text-gray-800 */
+  font-size: 1.125rem; /* Equivalent to text-lg */
+  line-height: 1.75rem;
+  font-weight: 500; /* Equivalent to font-medium */
+  padding-left: 0.5rem; /* Equivalent to px-2 */
+  padding-right: 0.5rem;
+  padding-top: 0.25rem; /* Equivalent to py-1 */
+  padding-bottom: 0.25rem;
+}
+
+.dropdown-arrow {
+  width: 1.5rem; /* Equivalent to w-6 */
+  height: 1.5rem; /* Equivalent to h-6 */
+  color: #6b7280; /* Equivalent to text-gray-500 */
+  transition: transform 300ms; /* Equivalent to transition-transform duration-300 */
+}
+
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-options-list {
+  position: absolute;
+  top: 100%; /* Equivalent to top-full */
+  left: 0;
+  margin-top: 0.5rem; /* Equivalent to mt-2 */
+  width: 100%;
+  background-color: #ffffff; /* Equivalent to bg-white */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Equivalent to shadow-xl */
+  overflow: hidden;
+  z-index: 10; /* Equivalent to z-10 */
+  transform-origin: top; /* Equivalent to origin-top */
+  transform: scaleY(1); /* Equivalent to scale-y-100 */
+  opacity: 1; /* Equivalent to opacity-100 */
+  transition: all 300ms ease-in-out; /* Equivalent to transition-all duration-300 ease-in-out */
+}
+
+.dropdown-options-list ul {
+  list-style: none;
+  padding: 0.25rem 0; /* Equivalent to py-1 */
+  margin: 0;
+}
+
+.dropdown-option-item {
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem;
+  padding-top: 0.5rem; /* Equivalent to py-2 */
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: #374151; /* Equivalent to text-gray-700 */
+  transition: background-color 200ms; /* Equivalent to transition-colors duration-200 */
+}
+
+.dropdown-option-item:hover {
+  background-color: #eff6ff; /* Equivalent to hover:bg-blue-50 */
+}
+
+.dropdown-option-item.selected {
+  background-color: #dbeafe; /* Equivalent to bg-blue-100 */
+  font-weight: 600; /* Equivalent to font-semibold */
+}
+
+.trending-products-div{
+  grid-column: span 1;
 }
