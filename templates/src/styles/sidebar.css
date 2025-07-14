@@ -73,23 +73,16 @@
 
 .outline {
     width: 80%;
-    height: 60px;
+    height: 3.7rem;
     margin-left:1rem;
     margin-right:1rem;
     border-bottom: solid 1px #9ea1a3;
 }
 
-.text {
-    font-size: 1.2rem;
+.outline p {
+    font-size: 1.3rem;
     font-weight:550;
     margin-top:1.2rem;
-    line-height: 0;
-    font-family: 'roboto slab', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-}
-
-.text2{
-    font-size:0.7em;
-    font-weight: 500;
     font-family: 'roboto slab', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
 }
 

@@ -80,8 +80,7 @@ function Sidebar() {
         <div id='Hidden' className='Hidden-bar' style={customStyle}>
           <button style={{ float: 'right', margin: '8px', background: 'none', border: 'none', fontSize: '20px', cursor: 'pointer' }} onClick={hiddenBar}>&times;</button>
           <div className='outline'>
-            <p className='text'>STOCKTOPUS</p>
-            <p className='text2'>YOUR TRUST. OUR RESPONSIBILITY</p>
+            <p>STOCKTOPUS</p>
           </div>
           <div className='link1'>
             <Link to='/' >Dashboard</Link> <br />
