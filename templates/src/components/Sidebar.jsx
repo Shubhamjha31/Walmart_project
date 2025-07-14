@@ -22,7 +22,7 @@ function Sidebar() {
       <div className='outerborder'>
         <div className='sidebar'>
           <div className='logo-con'>
-           <span onClick={hiddenBar} className="material-symbols-outlined logo">warehouse</span>
+           <div onClick={hiddenBar} className="logo"></div>
           </div>
           <div className='logo-object'>
             <span onClick={hiddenBar} className="material-symbols-outlined object">Dashboard</span>
@@ -39,9 +39,10 @@ function Sidebar() {
           <div className='logo-object'>
             <span onClick={hiddenBar} className="material-symbols-outlined object">trending_up</span>
           </div>
-          <Link to='/notification'>
+          <Link to='/notification' style={{ textDecoration: 'none' }}>
           <div className='notification'>
-            <span className="material-symbols-outlined noti-icon">notifications_active</span>
+             <span className="material-symbols-outlined noti-icon">notifications_active</span>
+             <sup>6</sup>
           </div></Link>
 
         <div className='profile-con'>
@@ -79,7 +80,8 @@ function Sidebar() {
         <div id='Hidden' className='Hidden-bar' style={customStyle}>
           <button style={{ float: 'right', margin: '8px', background: 'none', border: 'none', fontSize: '20px', cursor: 'pointer' }} onClick={hiddenBar}>&times;</button>
           <div className='outline'>
-            <p>Inventory</p>
+            <p className='text'>STOCKTOPUS</p>
+            <p className='text2'>YOUR TRUST. OUR RESPONSIBILITY</p>
           </div>
           <div className='link1'>
             <Link to='/' >Dashboard</Link> <br />
