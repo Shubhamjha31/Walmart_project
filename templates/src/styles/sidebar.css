@@ -200,6 +200,7 @@ button {
 .notification {
     width: 50%;
     display: flex;
+    color: #101524;
     justify-content: center;
     margin-top: 8rem;
     border-radius: 5px;

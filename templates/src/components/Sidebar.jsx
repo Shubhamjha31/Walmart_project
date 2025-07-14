@@ -39,9 +39,10 @@ function Sidebar() {
           <div className='logo-object'>
             <span onClick={hiddenBar} className="material-symbols-outlined object">trending_up</span>
           </div>
+          <Link to='/notification'>
           <div className='notification'>
-            <span onClick={hiddenBar} className="material-symbols-outlined noti-icon">notifications_active</span>
-          </div>
+            <span className="material-symbols-outlined noti-icon">notifications_active</span>
+          </div></Link>
 
         <div className='profile-con'>
            <span className="material-symbols-outlined profile">account_circle</span>
